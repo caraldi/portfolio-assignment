@@ -24,8 +24,9 @@ myLocalData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
+//risa changed "ele" to "a,b"; "ele" was from old code
 myLocalData.forEach(function(a,b) {
-  samples.push(new Article(ele));
+  samples.push(new Article(a,b));
 });
 
 samples.forEach(function(a) {
