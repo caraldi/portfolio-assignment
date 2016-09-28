@@ -11,25 +11,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-    <link rel="stylesheet" href="vendor/styles/railscasts.css">
-    <script id="article-template" type="text/x-handlebars-template">
-      <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
-        <header>
-          <h1>{{title}}</h1>
-          <div class="byline">
-            By <address><a href="{{authorUrl}}">{{author}}</a></address>
-            {{publishStatus}}
-          </div>
-        </header>
-        <section class="article-body">{{{body}}}</section>
-        <a href="#" class="read-on">Read on &rarr;</a>
-      </article>
-    </script>
-    <script id="author-filter-template" type="text/x-handlebars-template">
-      <option value="{{author}}">{{author}}</option>
-     </script>
-     <script id="category-filter-template" type="text/x-handlebars-template">
-      <option value="{{category}}">{{category}}</option>
+    <!--Template for each row of the samples-data section-->
+    <script id="sample-template" type="text/x-handlebars-template">
+      <li><strong>{{title}}</strong>: {{numWords}} words written</li>
      </script>
   </head>
   <body>
@@ -61,32 +45,16 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section id="samples" class="tab-content">
-        <div>
-          <ul id="filter">
-            <li>
-              <select id="category-filter">
-                <option value="">Filter by Category</option>
-              </select>
-            </li>
-          </ul>
-        </div>
+    <main class="clearfix">
+      <h1>Portfolio Samples Data</h1>
+      <section id="sample-stats">
+        <dt>Total samples:</dt> <dd class="samples"></dd>
+        <dt>Total words:</dt> <dd class="word-count"></dd>
+        <h2>Words per Sample</h2>
+        <ul class="words-per-data">
+          <!--Unordered list to later append to with some stats for each sample -->
+        </ul>
       </section>
-      <section id="about" class="tab-content">
-        <header>
-          Welcome to my portfolio
-        </header>
-        </section>
-        <section>
-          <h1>Some of my interests include:</h1>
-          <ul>
-            <li>Coding</li>
-            <li>Social impact research</li>
-            <li>Educational psychology</li>
-            <li>Everything outdoors</li>
-          </ul>
-        </section>
     </main>
     <footer>
       &copy; 2016   |   Representation Matters  |  Caitlin M Araldi
@@ -99,5 +67,6 @@
     <script src="/scripts/models/article.js"></script>
     <!--View-->
     <script src="scripts/writingSamplesView.js"></script>
+    <script src="/scripts/views/adminPage.js"></script>
   </body>
 </html>
