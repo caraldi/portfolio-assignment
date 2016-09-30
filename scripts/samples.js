@@ -4,7 +4,7 @@ function Article (opts) {
   this.author = opts.author;
   this.authorUrl = opts.authorUrl;
   this.title = opts.title;
-  this.cateogry = opts.category;
+  this.category = opts.category;
   this.body = opts.body;
   this.publishedOn = opts.publishedOn;
 }
@@ -24,7 +24,7 @@ myLocalData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-myLocalData.forEach(function(a,b) {
+myLocalData.forEach(function(ele) {
   samples.push(new Article(ele));
 });
 

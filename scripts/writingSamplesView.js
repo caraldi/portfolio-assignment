@@ -33,13 +33,18 @@ articleView.handleCategoryFilter = function() {
   });
 };
 
-articleView.handleMainNav = function(event) {
-  $('main-nav').on('click', '.tab', function() {
+articleView.handleMainNav = function() {
+  $('.main-nav').on('click', '.tab', function(event) {
     $('.tab-content').hide();
     event.preventDefault();
 
-    var selectedContent = $(this).data('content');
+    var $selectedContent = $(this).data('content');
+    console.log(this);
     $('#' + $selectedContent).fadeIn('slow');
   });
-  $('main-nav .tab:first').click();
+  $('.main-nav .tab:first').click();
 };
+
+articleView.populateFilters();
+articleView.handleCategoryFilter();
+articleView.handleMainNav();

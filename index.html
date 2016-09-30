@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <script id="article-template" type="text/x-handlebars-template">
-      <article class="clearfix" data-category="{{data-category}}">
+      <article class="clearfix" data-category="{{category}}">
         <header>
           <h1>{{title}}</h1>
           <div class="byline">
@@ -43,13 +43,13 @@
         <div class="icon-list"></div>
         <div class="tab-menu">
           <ul>
-            <li class="tab"><a href="" class="icon-number">About</a></li>
-            <li class="tab"><a href="" class="icon-number2">Sample Work</a></li>
+            <li data-content="about" class="tab"><a href="#" class="icon-number">About</a></li>
+            <li data-content="samples" class="tab"><a href="#" class="icon-number2">Sample Work</a></li>
             <li class="tab"><a href="https://github.com/caraldi" class="icon-number3">GitHub</a></li>
             <li class="tab"><a href="https://www.linkedin.com/in/araldicm" class="icon-number4">LinkedIn</a></li>
             <li class="tab"><a href="https://plus.google.com/u/0/107764950186935920917" class="icon-number5">Google+</a></li>
-            <li class="tab"><a href="" class="icon-number6">Twitter</a></li>
-            <li class="tab"><a href="" class="icon-number7">Contact</a></li>
+            <li class="tab"><a href="#" class="icon-number6">Twitter</a></li>
+            <li class="tab"><a href="#" class="icon-number7">Contact</a></li>
           </ul>
         </div>
       </nav>
