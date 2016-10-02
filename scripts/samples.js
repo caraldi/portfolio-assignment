@@ -1,16 +1,15 @@
-var samples = [];
+'use strict';
 
-function Article (opts) {
-  this.author = opts.author;
-  this.authorUrl = opts.authorUrl;
-  this.title = opts.title;
-  this.category = opts.category;
-  this.body = opts.body;
-  this.publishedOn = opts.publishedOn;
+function Sample (opts) {
+  for (var key in opts) {
+    this[keys] = opts[keys];
+  }
 }
 
+Sample.all = [];
+
 Article.prototype.toHtml = function() {
-  var $source = $('#article-template').html();
+  var $source = $('#sample-template').html();
   var template = Handlebars.compile($source);
 
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
