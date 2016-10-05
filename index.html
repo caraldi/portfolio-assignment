@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/title-icon" href="favicon.ico" />
+    <link class="fox" rel="shortcut icon" type="image/title-icon" href="images/fox.jpg"/>
     <title>caitlin | web development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-    <script id="article-template" type="text/x-handlebars-template">
+    <script id="sample-template" type="text/x-handlebars-template">
       <article class="clearfix" data-category="{{category}}">
         <header>
           <h1>{{title}}</h1>
@@ -44,7 +44,7 @@
         <div class="tab-menu">
           <ul>
             <li data-content="about" class="tab"><a href="#" class="icon-number">About</a></li>
-            <li data-content="samples" class="tab"><a href="#" class="icon-number2">Sample Work</a></li>
+            <li data-content="samples" class="tab"><a href="#" class="icon-number2">Portfolio</a></li>
             <li class="tab"><a href="https://github.com/caraldi" class="icon-number3">GitHub</a></li>
             <li class="tab"><a href="https://www.linkedin.com/in/araldicm" class="icon-number4">LinkedIn</a></li>
             <li class="tab"><a href="https://plus.google.com/u/0/107764950186935920917" class="icon-number5">Google+</a></li>
@@ -86,10 +86,11 @@
     </footer>
     <!--Vendor-->
     <script src="/vendor/scripts/jquery-2.1.4.js"></script>
+    <script src="/vendor/scripts/highlight.pack.js"></script>
     <script src="/vendor/scripts/handlebars.js"></script>
     <script src="/vendor/scripts/marked.js"></script>
     <!--Models-->
-    <script src="/scripts/models/article.js"></script>
+    <script src="/scripts/models/samples.js"></script>
     <!--View-->
     <script src="scripts/writingSamplesView.js"></script>
 </html>

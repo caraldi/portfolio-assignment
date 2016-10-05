@@ -5,6 +5,10 @@ body {
   font-size: 100%;
 }
 
+.fox {
+  border-radius: 50%;
+}
+
 hr {
   margin: 1em;
   width: 80%;
