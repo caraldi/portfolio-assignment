@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-app",
+  "version": "1.0.0",
+  "description": "301 assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "rick@codefellows.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-request-proxy": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caraldi/portfolio-assignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caraldi/portfolio-assignment/issues"
+  },
+  "homepage": "https://github.com/caraldi/portfolio-assignment#readme"
+}
